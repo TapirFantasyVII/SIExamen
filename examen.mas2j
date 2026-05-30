@@ -1,0 +1,26 @@
+/*
+    examen
+    ---------------------------
+
+    Jason Application File
+
+    This file defines the initial state of the MAS
+
+    Jason 3.3.0
+    May 30, 2026 - 00:20:57
+*/
+
+MAS examen {
+
+    environment: example.Env(10)
+
+    agents: 
+            agt1 alumno.asl [beliefs="me(1) , preference(a) "]; 
+            agt2 alumno.asl [beliefs="me(2) , preference(b)"]; 
+            agt3 alumno.asl [beliefs="me(3) , preference(c), preference(b)"]; 
+            agt4 alumno.asl [beliefs="me(4) , preference(b), preference(d)"]; 
+          
+
+    //aslSourcePath: "src/agt";
+    aslSourcePath: "src/agt/sCompeticion";
+}
